@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-tavw#iqn7ip(st%^*j867z()0n+_h@$qzg6kl_jx@72flteg(3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://trendus2022.herokuapp.com/" ,"127.0.0.1"]
+ALLOWED_HOSTS = ["https://trendus2022.herokuapp.com" ,"127.0.0.1"]
 
 
 # Application definition
@@ -134,14 +134,13 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR , 'staticfiles')
 
 STATIC_URL = '/static/'
-MEDIA_URL = '/media/'
+MEDIA_URL = 'static/images/'
 
-STATICFILES_DIRS = [
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR , 'static'),
+)
 
-    (os.path.join(BASE_DIR ,'static'))
 
-    ]
-MEDIA_URL = '/images/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR ,'static/images')
 
