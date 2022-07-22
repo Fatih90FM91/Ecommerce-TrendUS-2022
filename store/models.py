@@ -1,7 +1,7 @@
-from distutils.command.upload import upload
-from email.policy import default
-from itertools import product
-from tkinter import MULTIPLE
+# from distutils.command.upload import upload
+# from email.policy import default
+# from itertools import product
+# from tkinter import MULTIPLE
 from django.db import models
 
 from django.urls import reverse
