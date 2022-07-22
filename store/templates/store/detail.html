@@ -1,0 +1,40 @@
+{% extends 'store/Main.html' %}
+{%load static%}
+{% block content%}
+  <a  class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue Shopping</a><br><br>
+  <h2>{{product.name}}</h2>
+  <h5>{{product.description}}</h5><br><br>
+  <div class="box-element product">
+    <h2><strong>Price:<h4 style="display: inline-block; float: right"><strong>${{product.price|floatformat:2}}</strong></h4></strong></h2>
+    
+
+  </div>
+ 
+ 
+
+
+
+
+  <!-- =================new one========================== -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel" style="width: 50%; border:2px solid #FFF80A; border-radius: 10px; background-color: #EAF6F6;">
+    <div class="carousel-inner">
+        {%for photo in photos %}
+      <div class="carousel-item  {% if forloop.counter0 == 0 %} active {%endif%}">
+        <img src="{{photo.imageUrl}}" class="d-block w-100" alt="Wild Landscape"/>
+      </div>
+        {% endfor %}
+     
+    </div>
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  {% endblock content%}
