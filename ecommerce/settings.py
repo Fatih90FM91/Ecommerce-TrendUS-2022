@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 # Configure Django App for Heroku.
 import django_on_heroku # to be able to success to upload this ,you need to powersell terminal!!!!!!!
-import dj_database_url
+#import dj_database_url
 from pathlib import Path
 
 
@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-tavw#iqn7ip(st%^*j867z()0n+_h@$qzg6kl_jx@72flteg(3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://trendus2022.herokuapp.com"]
+ALLOWED_HOSTS = ["localhost","127.0.0.1","https://trendus2022.herokuapp.com"]
 
 
 # Application definition
@@ -98,7 +98,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(os.path.join(BASE_DIR , 'db.sqlite3')),                                     #BASE_DIR / 'db.sqlite3'
     }
 }
 
@@ -135,7 +135,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = False
+USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
