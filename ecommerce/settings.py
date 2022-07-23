@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-tavw#iqn7ip(st%^*j867z()0n+_h@$qzg6kl_jx@72flteg(3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://trendus2022.herokuapp.com" ,"127.0.0.1"]
+ALLOWED_HOSTS = ["https://trendus2022.herokuapp.com"]
 
 
 # Application definition
@@ -134,7 +134,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
