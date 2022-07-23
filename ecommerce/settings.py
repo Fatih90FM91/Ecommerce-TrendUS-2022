@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-tavw#iqn7ip(st%^*j867z()0n+_h@$qzg6kl_jx@72flteg(3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost","127.0.0.1","https://trendus2022.herokuapp.com"]
+ALLOWED_HOSTS = ["localhost","127.0.0.1","trendus2022.herokuapp.com/"]
 
 
 # Application definition
