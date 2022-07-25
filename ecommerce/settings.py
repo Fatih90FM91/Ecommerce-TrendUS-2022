@@ -94,24 +94,24 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'trendus',
-        'HOST': 'localhost',
-        'PORT': '5432',
-        'USER': 'postgres',
-        'PASSWORD': '19900203'
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': str(os.path.join(BASE_DIR , 'db.sqlite3')),                                     #BASE_DIR / 'db.sqlite3'
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'trendus',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#         'USER': 'postgres',
+#         'PASSWORD': '19900203'
 #     }
 # }
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(os.path.join(BASE_DIR , 'db.sqlite3')),                                     #BASE_DIR / 'db.sqlite3'
+    }
+}
 
 #postgres://lgajxzdanecemo:002ede5f455468db1fb280b0e6b6d3fc9f7f938a72065a34a56a3bb1d13d039f@ec2-54-76-43-89.eu-west-1.compute.amazonaws.com:5432/d16gb71tfoest3
 #postgres://jzndczsipfokvf:cc1a89a502c5841e2fed82694c862078104bf4e82d019b796de054f63babae07@ec2-176-34-215-248.eu-west-1.compute.amazonaws.com:5432/d3gbfqp5t0uj97
