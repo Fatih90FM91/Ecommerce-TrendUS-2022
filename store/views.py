@@ -16,7 +16,7 @@ def store(request):
 
     products = Product.objects.all()
     context = { 'products' : products ,'cartItems' : cartItems}
-    return render(request , 'store.html' , context) #src\templates\store.html
+    return render(request , 'store/store.html' , context) #src\templates\store.html
 
 def detail_view(request,id):
     product = get_object_or_404(Product,id=id)
