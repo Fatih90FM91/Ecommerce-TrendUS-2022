@@ -150,12 +150,12 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR , 'static')]
 
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR ,'static/images/images')
+MEDIA_ROOT = os.path.join(BASE_DIR ,'static/images')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'home'
+#LOGOUT_REDIRECT_URL = 'home'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
