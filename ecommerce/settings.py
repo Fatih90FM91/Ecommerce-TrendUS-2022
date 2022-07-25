@@ -83,14 +83,25 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd3gbfqp5t0uj97',
+#         'HOST': 'ec2-176-34-215-248.eu-west-1.compute.amazonaws.com',
+#         'PORT': '5432',
+#         'USER': 'jzndczsipfokvf',
+#         'PASSWORD': 'cc1a89a502c5841e2fed82694c862078104bf4e82d019b796de054f63babae07'
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd3gbfqp5t0uj97',
-        'HOST': 'ec2-176-34-215-248.eu-west-1.compute.amazonaws.com',
+        'NAME': 'trendus',
+        'HOST': 'localhost',
         'PORT': '5432',
-        'USER': 'jzndczsipfokvf',
-        'PASSWORD': 'cc1a89a502c5841e2fed82694c862078104bf4e82d019b796de054f63babae07'
+        'USER': 'postgres',
+        'PASSWORD': '19900203'
     }
 }
 
