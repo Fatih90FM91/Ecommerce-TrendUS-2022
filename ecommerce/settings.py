@@ -106,7 +106,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # }
 
 
-##pgAdmin 4 
+##Aiven database Postgresql 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
